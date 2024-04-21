@@ -113,9 +113,7 @@ aimo-solver/
 Contributions to the package are welcome! If you find any issues or have suggestions for improvements, please open an issue on the GitHub repository. If you'd like to contribute code, please follow these steps:
 
 1. Fork the repository and create a new branch for your feature or bug fix.
-
 2. Make your changes and ensure that the code passes all tests and linting checks.
-
 3. Submit a pull request, describing your changes and the motivation behind them.
 
 Please ensure that your code adheres to the project's coding style and conventions. The package uses Ruff, a Python linter, to maintain code quality and consistency. Run Ruff before submitting your pull request to catch any style or formatting issues.

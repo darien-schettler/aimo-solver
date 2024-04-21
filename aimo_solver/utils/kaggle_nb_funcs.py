@@ -164,7 +164,7 @@ def load_vllm_model_and_tokenizer(
 def clean_memory() -> None:
     """Function to clean RAM & vRAM"""
     gc.collect()
-    ctypes.CDLL("libc.so.6").malloc_trim(0)
+    # ctypes.CDLL("libc.so.6").malloc_trim(0)
     torch.cuda.empty_cache()
 
 
@@ -197,9 +197,11 @@ def print_ln(symbol="-", line_len=110, newline_before=False, newline_after=False
     Returns:
         None; A divider with pre/post new-lines (optional) is printed
     """
-    if newline_before: print();
+    if newline_before:
+        print()
     print(symbol * line_len)
-    if newline_after: print();
+    if newline_after:
+        print()
 
 
 def display_hr(newline_before=False, newline_after=False):
